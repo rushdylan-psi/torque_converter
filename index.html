@@ -20,18 +20,13 @@
         <p>Convert Ft.lb to In.lb</p>
 
         <form>
-            <input type="text"  class="inputinches">
-            <button class="btn" type="submit">
-            <i class="fas fa-plus-square"></i>
-            </button>
-        </form>
+                <input id="inputFtlb" type="number" placeholder="Foot Pounds"
+                oninput="torqueConverter(this.value)"
+                onchange="torqueConverter(this.value)">
+              <p>Inch Pounds: <span id="outputInches"></p>
+              </form>
           
 
-        <form>
-            <input type="text"  class="container2">
-            
-            
-        </form>
         
         <script src="./app.js"></script>
 
