@@ -1,34 +1,45 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="./style.css" class="">
-        <style class="css"></style>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+   <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css" class="">
+    <style class="css"></style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>TQC</title>
-    </head>
-    <body>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TQC</title>
+  </head>
+   <body>
 <header>
-        <h1>Torque Converter</h1>
-        </header>
+ <h1>Torque Converter</h1>
+  </header>
 
-        <p>Convert Ft.lb to In.lb</p>
+  <p>Convert Ft.lb to In.lb</p>
 
-        <form>
-                <input id="inputFtlb" type="number" placeholder="Foot Pounds"
-                oninput="torqueConverter(this.value)"
-                onchange="torqueConverter(this.value)">
-              <p>Inch Pounds: <span id="outputInches"></p>
-              </form>
-          
+ <form>
+ <input id="inputFtlb" type="number" placeholder="Foot Pounds">
+ <button type=submit id="btn">Send it!</button>
+ <select id="conversion-select">
+        <!-- comment: what the user sees -->
+ <option value="ft lbs">
+ Ft.lb
+  </option>
+  <option value="nm">
+   Nm
+  </option>
+</select>
 
-        
-        <script src="./app.js"></script>
 
-    </body>
-    </html>
+</form>
+
+<p id="output">Inch Pounds:</p>
+ <script src="./app.js"></script>
+
+
+
+  </body>
+   </html>
