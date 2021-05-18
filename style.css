@@ -5,40 +5,119 @@
 }
 
 body{ 
-    background-image:linear-gradient(120deg,#f6d365, #fda085);
-    color: white;
+    background-color:#ffffff;
+    color: rgb(0, 0, 0);
     font-family: 'poppins', sans-serif;
     min-height: 100vh;
 }
 
 header {
     font-size: 1.5rem;
+    text-align: center;
 }
-
-header, 
-form{
-    min-height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-form input,
- form button {
+.formInput {
     padding: 0.5rem;
-    font-size: 2rem;
-    border: none;
+    font-size: 50px;
+    border: 5px solid #424040;
     background: white;
+    width: 50%;
+    margin: 10px auto;
 }
 
 form button{
-    color: #d88771;
+    color: #ff3700;
     background: white;
     cursor: pointer;
+    border: 5px, solid #424040;
     transition: all 0.3s ease;
 }
 
 form button:hover{
-    background: #dd8871
+    background: #3bb3b3
+    
+}
+
+p {
+    text-align: center;
+    font-size: 2rem;
+}
+h2 {
+    text-align: center;
     color: white;
+
+    bottom: 450px;
+}
+.infoLeft {
+    color: white;
+    background-color: #1c2329;
+    width: 380px;
+    text-align: center;
+    padding: 0.25em;
+    opacity: 0.97;
+    border-radius: 2px;
+    margin: 0 0 40px -30px;
+    padding: 0.25em 0.25em 0.25em 3em;
+    position: relative;
+}
+.infoRight {
+    color: white;
+    background-color: #1c2329;
+    width: 380px;
+    text-align: center;
+    padding: 0.25em;
+    opacity: 0.97;
+    border-radius: 2px;
+    margin: 0 0 40px -30px;
+    padding: 0.25em 0.25em 0.25em 3em;
+    left: 800px;
+    bottom: 400px;
+    position: relative;
+    
+}
+.flexbox-container1 {
+    display: flex;
+    justify-content:space-between;   
+}
+.flexbox-container2 {
+    display: flex;
+    align-items:center;
+    align-items: flex-start;   
+}
+
+.flexbox-item-left {
+    font-size: large;
+    width: 300px;
+    border-radius: 10px;
+
+}
+.flexbox-item-right {
+    font-size: large;
+    width: 300px;
+    border-radius: 10px;
+
+}
+
+.flexbox-item {
+    width: 600px;
+    margin: 10px;
+    border: 3px solid #ffffff;
+    background-color: #424040;
+    color: #ffffff;
+}
+.flexbox-item-1 {
+    width: 300px;
+    font-size: 60px;
+    border-radius: 10px;;
+}
+.flexbox-item-2, img {
+    max-width: 85%;
+    height:auto;
+    align-content: center;
+    margin:;
+    border-radius: 20px;
+
+}
+.flexbox-item-3 {
+    min-height:600; 
+    border-radius: 10px;
 }
