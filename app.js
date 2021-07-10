@@ -1,8 +1,20 @@
+
+
 var menu = document.getElementById('conversion-select');
-btn.addEventListener('click', generateTorque);
+var btn = document.getElementById("btn");
+btn.addEventListener("click", generateTorque);
+
+window.onscroll = function () {
+    scrollRotate();
+};
+
+function scrollRotate() {
+    let image = document.getElementById("leftgear");
+    image.style.transform = "rotate(" + window.pageYOffset/2 + "deg)";
+}
 
 function generateTorque(event) {
-    event.preventDefault();
+    //event.preventDefault();
     var result = 0;
     var inputVal = document.getElementById('inputFtlb').value;
     if (menu.value == '1') {     
@@ -10,10 +22,5 @@ function generateTorque(event) {
     } else if (menu.value == '2') {
       result = inputVal * 1.3;
     }
-    document.getElementById('output').innerHTML = inputVal + ' Foot pounds is equal to ' + result + ' inch pounds.';
+    document.getElementById('output').innerHTML = inputVal + ' is equal to ' + result;
 }
-
-
-
-
-

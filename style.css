@@ -1,123 +1,122 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body{ 
-    background-color:#ffffff;
-    color: rgb(0, 0, 0);
-    font-family: 'poppins', sans-serif;
-    min-height: 100vh;
+body {
+    height: 3000px;
 }
 
-header {
-    font-size: 1.5rem;
-    text-align: center;
-}
-.formInput {
-    padding: 0.5rem;
-    font-size: 50px;
-    border: 5px solid #424040;
-    background: white;
-    width: 50%;
-    margin: 10px auto;
+html {
+    background-color: black;
 }
 
-form button{
-    color: #ff3700;
-    background: white;
-    cursor: pointer;
-    border: 5px, solid #424040;
-    transition: all 0.3s ease;
+.container1 {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
 }
 
-form button:hover{
-    background: #3bb3b3
-    
+
+.item1 {
+    color: white;
 }
 
 p {
-    text-align: center;
-    font-size: 2rem;
-}
-h2 {
-    text-align: center;
+    font-size: 45px;
+    font-family: 'Racing Sans One', cursive;
     color: white;
-
-    bottom: 450px;
-}
-.infoLeft {
-    color: white;
-    background-color: #1c2329;
-    width: 380px;
-    text-align: center;
-    padding: 0.25em;
-    opacity: 0.97;
-    border-radius: 2px;
-    margin: 0 0 40px -30px;
-    padding: 0.25em 0.25em 0.25em 3em;
-    position: relative;
-}
-.infoRight {
-    color: white;
-    background-color: #1c2329;
-    width: 380px;
-    text-align: center;
-    padding: 0.25em;
-    opacity: 0.97;
-    border-radius: 2px;
-    margin: 0 0 40px -30px;
-    padding: 0.25em 0.25em 0.25em 3em;
-    left: 800px;
-    bottom: 400px;
-    position: relative;
     
 }
-.flexbox-container1 {
+
+form {
+    margin-left: 40%;
+}
+
+.btn {
+    background-color: #615d5c;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+.btn:hover {
+     opacity: 2;
+  }
+
+  .formInput {
+    border: 2px solid red;
+    border-radius: 4px;
+    text-align: center;
+  }
+
+ .output p {
+     height: 300px;
+     width: 100%;
+     color: white;
+     font-family:'Racing Sans One', cursive;
+     font-size: xxx-large;
+ }
+
+ .output-container {
+     display: flex;
+     justify-content: center;
+ }
+
+
+ #leftgear {
+    width: 30vw;
+    /*max-width: 50%;*/
+    height: auto;
+}
+
+.container2 {
     display: flex;
-    justify-content:space-between;   
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #615d5c;
+    max-width: 650px;
+    margin-top: 40px;
+    margin-left: 25%;
+    border-radius: 10px;
+
 }
-.flexbox-container2 {
+
+.container3 {
     display: flex;
-    align-items:center;
-    align-items: flex-start;   
-}
-
-.flexbox-item-left {
-    font-size: large;
-    width: 300px;
-    border-radius: 10px;
-
-}
-.flexbox-item-right {
-    font-size: large;
-    width: 300px;
+    flex-direction: row;
+    flex-grow: 2;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #615d5c;
+    max-width: 650px;
+    margin-top: 40px;
+    margin-left: 25%;
     border-radius: 10px;
 
 }
 
-.flexbox-item {
-    width: 600px;
-    margin: 10px;
-    border: 3px solid #ffffff;
-    background-color: #424040;
-    color: #ffffff;
+.conversion {
+    font-size: 5px;
+    font-family: 'Racing Sans One', cursive;
+    color: white;
 }
-.flexbox-item-1 {
-    width: 300px;
-    font-size: 60px;
-    border-radius: 10px;;
-}
-.flexbox-item-2, img {
-    max-width: 85%;
-    height:auto;
-    align-content: center;
-    margin:;
-    border-radius: 20px;
 
-}
-.flexbox-item-3 {
-    min-height:600; 
-    border-radius: 10px;
+.question {
+    font-size: 55px;
+    font-family: 'Shadows Into Light', cursive;
+    color: white;
 }
